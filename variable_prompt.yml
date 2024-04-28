@@ -1,6 +1,6 @@
 - name: prompt from variables
   hosts: localhost
-  vars_prompt:
+  variable_prompt:
   - vars_prompt.yml
 
   tasks:
