@@ -4,5 +4,5 @@
   - vars.yml
   tasks:
    - name: print vaiables from files
-     ansilbe.builtin.debug:
+     ansible.builtin.debug:
       msg: "am learning {{Course}} form {{Trainer}} in {{Duration}}"
