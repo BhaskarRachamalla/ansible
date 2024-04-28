@@ -1,5 +1,5 @@
 - name: variables from inventory
-  hosts: locathost  
+  hosts: localhost  
 
   tasks:
     - name: print variables from inventory
