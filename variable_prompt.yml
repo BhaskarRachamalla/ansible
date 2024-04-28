@@ -4,9 +4,9 @@
    - name: USERNAME
      prompt: please enter your user name 
      private: yes
-    - name: PASSWORD 
-      prompt: please enter password 
-      private: true
+   - name: PASSWORD 
+     prompt: please enter password 
+     private: true
 
   tasks:
 
