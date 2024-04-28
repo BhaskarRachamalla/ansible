@@ -1,0 +1,7 @@
+- name: variables from inventory
+  hosts: locathost  
+
+  tasks:
+    - name: print variables from inventory
+      ansible.builtin.debug:
+       msg: "am learing {{}} from {{}} and total duration is {{}}"
