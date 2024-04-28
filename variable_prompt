@@ -1,0 +1,6 @@
+- name: prompt from variables
+  hosts: localhost
+  tasks:
+   - name: print username and password
+     ansible.builtin.debug:
+      msg: "username is {{}} and password is {{}}"
