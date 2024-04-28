@@ -1,0 +1,8 @@
+- name: variables from files
+  hosts: localhost
+  vars:
+  - vars.yml
+  tasks:
+   - name: print vaiables from files
+     ansilbe.builtin.debug:
+      msg: "am learning {{Course}} form {{Trainer}} in {{Duration}}"
