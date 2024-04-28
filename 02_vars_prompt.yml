@@ -1,7 +1,6 @@
-- name: USERNAME
-  prompt: please enter your user name 
-  private: no
-  
-- name: PASSWORD 
-  prompt: please enter password 
-  private: yes
+name: USERNAME
+prompt: please enter your user name 
+private: no
+name: PASSWORD 
+prompt: please enter password 
+private: yes
