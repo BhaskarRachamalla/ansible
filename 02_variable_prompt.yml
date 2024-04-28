@@ -1,12 +1,12 @@
 - name: prompt from variables
   hosts: localhost
   var_prompt:
-  name: USERNAME
-  prmopt: enter user name
-  private: no
-  name: PASSWORD
-  prmopt: enter password
-  private: yes
+  - name: USERNAME
+    prmopt: enter user name
+    private: no
+  - name: PASSWORD
+    prmopt: enter password
+    private: yes
   
 
 
