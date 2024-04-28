@@ -2,10 +2,10 @@
   hosts: localhost
   var_prompt:
   - name: USERNAME
-    prmopt: enter user name
+    prompt: enter user name
     private: no
   - name: PASSWORD
-    prmopt: enter password
+    prompt: enter password
     private: yes
   
 
