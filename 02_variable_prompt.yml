@@ -1,7 +1,14 @@
 - name: prompt from variables
   hosts: localhost
   var_prompt:
-  - 02_vars_prompt.yml
+  name: USERNAME
+  prmopt: enter user name
+  private: no
+  name: PASSWORD
+  prmopt: enter password
+  private: yes
+  
+
 
   tasks:
 
