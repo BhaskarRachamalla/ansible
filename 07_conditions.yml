@@ -6,6 +6,7 @@
     private: no
 
   tasks:
-  - name: print number
+  - name: number is less than 10
     ansible.builtin.debug:
-     msg: "{{NUMBER}}"
+     msg: "{{NUMBER}} is than 10"
+    when: NUMBER < 10
