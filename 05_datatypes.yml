@@ -5,6 +5,8 @@
     Tools:
     - linux
     - shell
-    - ansible 
+    - ansible
+  tasks:
+  - name: print courses 
   ansible.builtin.debug:
    msg: "{{courses}}"
