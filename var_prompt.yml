@@ -1,0 +1,5 @@
+- name: variables using prompt
+  hosts: localhost  
+  tasks:
+  - name: user name and password 
+    ansible.buitin.debug:
