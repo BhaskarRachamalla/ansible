@@ -6,7 +6,12 @@
     - linux
     - shell
     - ansible
+    Experience:
+      Devops: 3
+      AWS: 2
+      Docker: 1
+    RealTimeExperince: yes
   tasks:
   - name: print courses 
     ansible.builtin.debug:
-     msg: "{{courses}}"
+     msg: "course: {{courses}} with experience {{Experience}} and have real-time experinece {{RealTimeExperince}} "
