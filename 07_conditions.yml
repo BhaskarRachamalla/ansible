@@ -1,0 +1,10 @@
+- name: Conditions using filters
+  hosts: localhost
+  vars_prompt:
+    - name: NUMBER
+      prompt: print value 
+      private: no
+  tasks:
+  - name: print the value
+    ansible.buitin.debug:
+     msg: "print Number {{NUMBER}}"
