@@ -2,6 +2,9 @@
   hosts: localhost
   become: yes
   tasks:
+  - name: check user exits or not
+    ansible.builtin.command: id expense
+
   - name: say Hello
     ansible.builtin.debug:
      msg: "Hello"
