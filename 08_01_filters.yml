@@ -19,3 +19,20 @@
     ansible.builtin.debug:
      msg: "Maximum ages is: {{age | max}}"
 
+- name: convert directory to items
+  hosts: localhost  
+  vars:
+   - my_dict: 
+      course: Devops  
+      Trainer: shiva
+      Duration: 120hrs
+  tasks:
+  - name: before converting 
+    ansible.builtin.debug:
+     msg: "Before converting {{ my_dict }}"
+  - name: after converting 
+    ansible.builtin.debug:
+     msg: "Before converting {{ my_dict | dict2items }}"
+  
+    
+
