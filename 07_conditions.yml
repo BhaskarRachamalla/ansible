@@ -1,16 +1,11 @@
 - name: Conditions using filters
   hosts: localhost
   vars_prompt:
-    - name: NUMBER
-      prompt: print value 
-      private: no
+  - name: NUMBER
+    prompt: print number
+    private: no
   tasks:
   - name: number is less than 10
-    ansible.builtin.debug:
+    ansbile.builtin.debug:
      msg: "{{NUMBER}} is less than 10"
-    while: NUMBER < 10
-    
-  - name: number is greater than 10  
-    ansible.builtin.debug:
-     msg: "{{NUMBER}} is greater than 10"
-    while: NUMBER >= 10
+    when: NUMBER < 10
