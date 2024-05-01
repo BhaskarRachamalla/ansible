@@ -1,0 +1,6 @@
+- name: filters
+  hosts: localhost  
+  tasks:
+  - name: print courses
+    ansible.builtin.debug:
+     msg: "{{course}}"
