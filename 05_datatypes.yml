@@ -1,0 +1,10 @@
+- name: Data-Types
+  hosts: localhost
+  vars:
+    courses: DevOps with AWS
+    Tools:
+    - linux
+    - shell
+    - ansible 
+  ansible.builtin.debug:
+   msg: "{{courses}}"
