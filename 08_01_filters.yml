@@ -14,8 +14,8 @@
   tasks:
   - name: max age
     ansible.builtin.debug:
-     msg: "Minimum age is: {{age | max}}"
+     msg: "Minimum age is: {{age | min}}"
   - name: min age
     ansible.builtin.debug:
-     msg: "Maximum ages is: {{age | min}}"
+     msg: "Maximum ages is: {{age | max}}"
 
