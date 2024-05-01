@@ -8,3 +8,19 @@
     - linux
     ansible.builtin.debug:
      msg: "Hi {{item}}"
+
+
+- name: packages
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: install packages
+    ansible.builtin.dnf:
+      name: item
+      status: latest
+    loop:
+    - mysql
+    - nginx
+    - postfix
+    ansible.builtin.debug:
+     msg: "Hi {{item}} installed "
