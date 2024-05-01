@@ -3,4 +3,4 @@
   tasks:
   - name: print courses
     ansible.builtin.debug:
-     msg: "{{course}}"
+     msg: "{{course}} | default('DevOps')"
