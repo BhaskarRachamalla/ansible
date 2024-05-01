@@ -8,5 +8,5 @@
     - ansible
   tasks:
   - name: print courses 
-  ansible.builtin.debug:
-   msg: "{{courses}}"
+    ansible.builtin.debug:
+     msg: "{{courses}}"
