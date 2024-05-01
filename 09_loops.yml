@@ -16,11 +16,11 @@
   tasks:
   - name: install packages
     ansible.builtin.dnf:
-      name: item
+      name: "{{ item }}"
       status: latest
     loop:
     - mysql
     - nginx
     - postfix
     ansible.builtin.debug:
-     msg: "Hi {{item}} installed "
+     msg: "Hi {{ item }} installed "
