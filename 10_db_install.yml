@@ -8,11 +8,13 @@
     ansible.builtin.dnf:
       name: mysql-server
       state: latest
+
   - name: Enable and Start MySQL Service
     ansible.builtin.service:
-    name: mysqld
-    state: started
-    enabled: yes
+     name: mysqld
+     state: started
+     enabled: yes
+
   - name: check db connection
     community.mysql.mysql_db:
       login_user: root
