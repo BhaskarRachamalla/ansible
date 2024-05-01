@@ -14,4 +14,4 @@
   tasks:
   - name: print courses 
     ansible.builtin.debug:
-     msg: "course: {{courses}} with experience {{Experience}} and have real-time experinece {{RealTimeExperince}} "
+     msg: "course: {{courses}} tools covered {{Tools}} with experience {{Experience}} and have real-time experinece {{RealTimeExperince}} "
