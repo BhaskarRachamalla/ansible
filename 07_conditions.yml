@@ -6,5 +6,5 @@
       private: no
   tasks:
   - name: print the value
-    ansible.buitin.debug:
+    ansible.builtin.debug:
      msg: "print Number {{NUMBER}}"
