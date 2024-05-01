@@ -5,6 +5,11 @@
       prompt: print value 
       private: no
   tasks:
-  - name: print the value
+  - name: number is less than 10
     ansible.builtin.debug:
-     msg: "print Number {{NUMBER}}"
+    while: NUMBER < 10
+     msg: "{{NUMBER}} is less than 10"
+  - name: number is greater than 10  
+    ansible.builtin.debug:
+    while: NUMBER >= 10
+     msg: "{{NUMBER}} is greater than 10"
